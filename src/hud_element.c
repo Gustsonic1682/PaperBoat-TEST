@@ -226,8 +226,7 @@ void hud_element_load_script(HudElement* hudElement, HudScript* anim) {
 }
 
 void hud_element_draw_rect(HudElement* hudElement, s16 texSizeX, s16 texSizeY, s16 drawSizeX, s16 drawSizeY,
-                           s16 offsetX, s16 offsetY, s32 clamp, s32 dropShadow);
-gDPSetTextureFilter(gMainGfxPos++, G_TF_POINT);{
+                           s16 offsetX, s16 offsetY, s32 clamp, s32 dropShadow){
     u32 isFmtCI4;
     u32 isFmtIA8;
     s32 flipX, flipY;
