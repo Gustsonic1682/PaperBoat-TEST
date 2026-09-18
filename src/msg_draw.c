@@ -1757,6 +1757,7 @@ void msg_draw_char(MessagePrintState* printer, MessageDrawState* drawState, s32 
     }
     gSPWideTextureRectangle(gMainGfxPos++, ulx * 4, uly * 4, lrx * 4, lry * 4, G_TX_RENDERTILE, texOffsetX, texOffsetY,
                         dsdx, dtdy);
+    gDPSetTextureFilter(gMainGfxPos++, G_TF_POINT);
 
 #if VERSION_IQUE
     if (charIndex >= MSG_CHAR_ZH_START) {
