@@ -1158,6 +1158,8 @@ s32 spr_draw_npc_sprite(s32 spriteInstanceID, s32 yaw, s32 alphaIn, PAL_PTR* pal
         palettes = paletteList;
     }
 
+    gDPSetTextureFilter(gMainGfxPos++, G_TF_POINT);
+    
     while (*components != PTR_LIST_END) {
         spr_draw_component(alpha, *components++, *animComps, rasters, palettes, zscale, mtx);
         if (*animComps != PTR_LIST_END) {
