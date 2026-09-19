@@ -1,4 +1,3 @@
-#include "common.h"
 #include "sprite.h"
 #include "sprite/player.h"
 #include "port/Engine.h"
