@@ -134,6 +134,8 @@ void spr_update_player_raster_cache(void);
 
 s32 spr_update_player_sprite(s32 arg0, s32 arg1, f32 timescale);
 
+gDPSetTextureFilter(gMainGfxPos++, G_TF_POINT);
+
 s32 spr_draw_player_sprite(s32 spriteInstanceID, s32 yaw, s32 arg2, PAL_PTR* paletteList, Matrix4f mtx);
 
 s32 func_802DDEC4(s32 arg0);
