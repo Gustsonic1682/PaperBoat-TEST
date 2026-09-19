@@ -1157,8 +1157,6 @@ s32 spr_draw_npc_sprite(s32 spriteInstanceID, s32 yaw, s32 alphaIn, PAL_PTR* pal
     if (spriteInstanceID & DRAW_SPRITE_OVERRIDE_PALETTES) {
         palettes = paletteList;
     }
-
-    gDPSetTextureFilter(gMainGfxPos++, G_TF_POINT);
     
     while (*components != PTR_LIST_END) {
         spr_draw_component(alpha, *components++, *animComps, rasters, palettes, zscale, mtx);
